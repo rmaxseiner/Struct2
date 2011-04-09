@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @physical_server.name %>
+</p>
+
+<p>
+  <b>Designname:</b>
+  <%= @physical_server.designName %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @physical_server.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_physical_server_path(@physical_server) %> |
+<%= link_to 'Back', physical_servers_path %>

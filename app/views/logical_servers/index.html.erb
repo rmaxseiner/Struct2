@@ -1,0 +1,27 @@
+<h1>Listing logical_servers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Designname</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @logical_servers.each do |logical_server| %>
+  <tr>
+    <td><%= logical_server.name %></td>
+    <td><%= logical_server.designName %></td>
+    <td><%= logical_server.description %></td>
+    <td><%= link_to 'Show', logical_server %></td>
+    <td><%= link_to 'Edit', edit_logical_server_path(logical_server) %></td>
+    <td><%= link_to 'Destroy', logical_server, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Logical server', new_logical_server_path %>

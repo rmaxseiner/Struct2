@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @logical_server.name %>
+</p>
+
+<p>
+  <b>Designname:</b>
+  <%= @logical_server.designName %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @logical_server.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_logical_server_path(@logical_server) %> |
+<%= link_to 'Back', logical_servers_path %>
