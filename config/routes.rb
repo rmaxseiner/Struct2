@@ -1,4 +1,6 @@
 Struct2::Application.routes.draw do
+  resources :users
+
   resources :physical_servers, :logical_servers
 
   #get "home/index"
