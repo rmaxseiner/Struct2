@@ -1,4 +1,9 @@
 Struct2::Application.routes.draw do
+  get "pages/home"
+  get "pages/about"
+  get "pages/contact"
+  get "pages/help"
+
   resources :users
 
   resources :physical_servers, :logical_servers
