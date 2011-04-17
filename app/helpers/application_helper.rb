@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title
-    base_title = "Struct - The Infrastructure Design Application"
+    base_title = "Struct "
     if @title.nil?
       base_title
     else

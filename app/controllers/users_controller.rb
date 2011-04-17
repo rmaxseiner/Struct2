@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
+    @title = "User Index"
     @users = User.all
 
   end

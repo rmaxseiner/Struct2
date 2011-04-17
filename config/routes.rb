@@ -1,9 +1,10 @@
 Struct2::Application.routes.draw do
-  get "pages/home"
-  get "pages/about"
-  get "pages/contact"
-  get "pages/help"
+  match '/signup', :to => 'users#new'
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about'
+  match '/help', :to => 'pages#help'
 
+  root :to => 'pages#home'
   resources :users
 
   resources :physical_servers, :logical_servers
